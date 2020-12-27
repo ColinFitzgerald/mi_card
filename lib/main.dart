@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 50,
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'Pacifico',
                   fontSize: 40,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.normal,
                   color: Colors.white,
 
                 ),
@@ -35,8 +36,51 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'SourceSansPro',
                   fontSize: 20,
+                  letterSpacing: 2.5,
                   fontWeight: FontWeight.bold,
                   color: Colors.teal.shade100,
+                ),
+              ),
+              SizedBox(
+                width: 150,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal.shade900,
+                  ),
+                  title: Text(
+                      '+1 236-982-9075',
+                      style: TextStyle(
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 20,
+                        color: Colors.teal.shade900,
+                      ),
+                    ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                      Icons.email,
+                      color: Colors.teal.shade900,
+                    ),
+                  title: Text(
+                    'me@colinfitzgerald.com',
+                    style: TextStyle(
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20,
+                      color: Colors.teal.shade900,
+                    ),
+                  ),
                 ),
               ),
 
